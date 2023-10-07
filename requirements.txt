@@ -1,0 +1,6 @@
+func_timeout
+transformers==4.21.2
+nltk~=3.7
+torch~=1.10.0+cu113
+openprompt~=1.0.1
+scikit-learn
