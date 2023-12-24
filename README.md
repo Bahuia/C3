@@ -1,3 +1,5 @@
+Codes for NeurIPS 2023 Paper [**_Parameterizing Context: Unleashing the Power of Parameter-Efficient Fine-Tuning and In-Context Tuning for Continual Table Semantic Parsing_**](https://openreview.net/forum?id=B01uiWhjpc)
+
 # Quick Start
 
 ## 1. Dataset Preparation
