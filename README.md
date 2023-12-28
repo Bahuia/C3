@@ -41,7 +41,7 @@ c3
 
 The backbone model of the proposed method is T5. Specifically,  you can get the [t5-large-lm-adapt](https://huggingface.co/google/t5-large-lm-adapt) and [t5-base-lm-adapt](https://huggingface.co/google/t5-base-lm-adapt) checkpoint from Hugging Face Hub. To achieve best performance, we recommend to use the large version of T5.
 
-The checkpoint should be placed in `c2/train/plms`, the directory should look like:
+The checkpoint should be placed in `C3/train/plms`, the directory should look like:
 
 ```
 c3
@@ -65,7 +65,7 @@ c3
 
 ## 3. Environment Setup
 
-You may install the packages mentioned in c2/requirements.txt to run the experiments. 
+You may install the packages mentioned in C3/requirements.txt to run the experiments. 
 
 Additionally, you will need to download punkt for nltk to run evaluation:
 
