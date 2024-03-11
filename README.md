@@ -1,9 +1,3 @@
-Codes for NeurIPS 2023 Paper [**_Parameterizing Context: Unleashing the Power of Parameter-Efficient Fine-Tuning and In-Context Tuning for Continual Table Semantic Parsing_**](https://openreview.net/forum?id=B01uiWhjpc)
-
-In this paper, we introduce a novel approach for continual table semantic parsing, integrating parameter-efficient fine-tuning (PEFT) and in-context tuning (ICT). We address the common challenges of overfitting and catastrophic forgetting in training parsers with limited examples. Our method employs a task-adaptive PEFT framework, freezing the model backbone and fine-tuning prompts to prevent forgetting. Additionally, we use a teacher-student framework with ICT to assist in few-shot learning and contextual understanding. Our experimental results on benchmarks demonstrate the superiority of our method over existing few-shot and continual learning approaches.
-
-![image](https://github.com/Bahuia/C3/assets/71223470/796e61b0-815c-4d17-a25b-4f1224d627e4)
-
 # Quick Start
 
 ## 1. Dataset Preparation
@@ -18,20 +12,22 @@ You can get the original Spider dataset [here](https://drive.google.com/uc?expor
 
 After unzipping the above files, you may place them in `c3/datasets`, and the directory should look like:
 
+**NOTE** We have generated `table.json` for WikiSQL in the format of Spider to evaluate, and we've provided the file [here](https://github.com/Bahuia/C3/blob/main/datasets/wikisql/tables.json).
 ```
 c3
 ├─datasets
-|	├─spider
-|	|	├─database
-|	|	├─dev.json
-|	|	├─dev_gold.sql
-|	|	├─README.txt
-|	|	...
-|	└─wikisql
-|		├─dev.db
-|       ├─dev.jsonl
-|       ├─dev.tables.jsonl
-|       ...
+| ├─spider
+| | ├─database
+| | ├─dev.json
+| | ├─dev_gold.sql
+| | ├─README.txt
+| | ...
+| └─wikisql
+|   ├─tables.json
+|   ├─dev.db
+|   ├─dev.jsonl
+|   ├─dev.tables.jsonl
+|   ...
 ├─train
 |
 ...
@@ -41,31 +37,31 @@ c3
 
 The backbone model of the proposed method is T5. Specifically,  you can get the [t5-large-lm-adapt](https://huggingface.co/google/t5-large-lm-adapt) and [t5-base-lm-adapt](https://huggingface.co/google/t5-base-lm-adapt) checkpoint from Hugging Face Hub. To achieve best performance, we recommend to use the large version of T5.
 
-The checkpoint should be placed in `C3/train/plms`, the directory should look like:
+The checkpoint should be placed in `c2/train/plms`, the directory should look like:
 
 ```
 c3
 ├─ datasets
 |
 ├─train
-|	├─ckpt
-|	├─data_train
-|	├─plms
-|	|	└─t5-large-lm-adapt
-|	|		├─config.json
-|	|		├─tokenizer.json
-|	|		├─pytorch_model.bin
-|	|		...
-|	├─train_utils
-|	├─trainer
-|	...
+| ├─ckpt
+| ├─data_train
+| ├─plms
+| | └─t5-large-lm-adapt
+| |   ├─config.json
+| |   ├─tokenizer.json
+| |   ├─pytorch_model.bin
+| |  ...
+| ├─train_utils
+| ├─trainer
+| ...
 |
 ...
 ```
 
 ## 3. Environment Setup
 
-You may install the packages mentioned in C3/requirements.txt to run the experiments. 
+You may install the packages mentioned in c2/requirements.txt to run the experiments. 
 
 Additionally, you will need to download punkt for nltk to run evaluation:
 
