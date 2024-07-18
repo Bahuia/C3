@@ -103,9 +103,9 @@ if __name__ == '__main__':
     predictor_trainer = PromptTuningPredictorTrainer(args)
     # retriever_trainer = PromptTuningRetrieverTrainer(args)
 
-    # if args.teacher:
-    #     for task_id in range(args.task_num):
-    #         predictor_trainer.prepare_teacher_logits(task_id, batch_size=12)
+    if args.teacher:
+        for task_id in range(args.task_num):
+            predictor_trainer.prepare_teacher_logits(task_id, batch_size=12)
 
 
     if args.do_train:
