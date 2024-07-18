@@ -136,30 +136,30 @@ Shell commands for all experiments.
 # combine1_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_perm_1 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 # combine1_perm_2
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_perm_2 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_perm_2 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 # combine1_perm_3
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_perm_3 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 
 # spider_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_perm_1 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 # spider_perm_2
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_perm_2 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_perm_2 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 # spider_perm_3
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_perm_3 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_perm_3 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 
 # combine1_multi_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_multi_perm_1 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 # combine1_multi_perm_2
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_multi_perm_2 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_multi_perm_2 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 # combine1_multi_perm_3
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type combine --dataset combine1_multi_perm_3 --task_num 7 --first_task_id=0 --last_task_id=6 --do_cl_eval true
 
 # spider_multi_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_multi_perm_1 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 # spider_multi_perm_2
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_multi_perm_2 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices02 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_multi_perm_2 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 # spider_multi_perm_3
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_multi_perm_3 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-base-lm-adapt --per_device_train_batch_size 6 --per_device_eval_batch_size 6 --gradient_accumulation_steps 2 --dataset_type spider --dataset spider_multi_perm_3 --task_num 11 --first_task_id=0 --last_task_id=10 --do_cl_eval true
 ```
 
 ### 5.2 Ablation Study
@@ -199,19 +199,19 @@ python train/main.py --cuda_visible_devices 0 --do_train true --task_adaptation 
 # spider_perm_1
 for i in 1 5 20 75
 do
-python train/main.py --cuda_visible_devices 1 --soft_token_num $i --predictor_backbone_plm t5-small-lm-adapt --predictor_batch_size 12 --predictor_gradient_accumulation_steps 1 --dataset_type spider --dataset spider_perm_1 --first_task_id 10 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
+python train/main.py --cuda_visible_devices 0 --soft_token_num $i --predictor_backbone_plm t5-small-lm-adapt --predictor_batch_size 12 --predictor_gradient_accumulation_steps 1 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
 done
 
 for i in 1 5 20 75
 do
-python train/main.py --cuda_visible_devices 3 --soft_token_num $i --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 4 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
+python train/main.py --cuda_visible_devices 0 --soft_token_num $i --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
 done
 
 
 # combine1_perm_1
 for i in 1 5 20 75
 do
-python train/main.py --cuda_visible_devices 0 --soft_token_num $i --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 4 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
+python train/main.py --cuda_visible_devices 0 --soft_token_num $i --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false ;
 done
 
 for i in 1 5 20 75
@@ -224,9 +224,9 @@ done
 
 ```shell
 # spider_perm_1
-python train/main.py --cuda_visible_devices 0 --continual_initialization true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 4 --last_task_id 11 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false --do_cl_eval true
+python train/main.py --cuda_visible_devices 0 --continual_initialization true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 11 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false --do_cl_eval true
 # combine1_perm_1
-python train/main.py --cuda_visible_devices 0 --continual_initialization true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 6 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false --do_cl_eval true
+python train/main.py --cuda_visible_devices 0 --continual_initialization true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false --do_cl_eval true
 ```
 
 + demonstration example number
@@ -269,7 +269,7 @@ python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-l
 # combine1_cxt_3_3.0_mix_ctco_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_3_3.0_mix_ctco_perm_1 --task_num 7 --first_task_id=0 --last_task_id=6 ;
 # spider_cxt_3_3.0_mix_ctco_perm_1
-python train/finetune_main.py --cuda_visible_devices 3 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_3_3.0_mix_ctco_perm_1 --task_num 11 --first_task_id=1 --last_task_id=10 ;
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_3_3.0_mix_ctco_perm_1 --task_num 11 --first_task_id=0 --last_task_id=10 ;
 # combine1_cxt_3_2.0_mix_ctco_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_3_2.0_mix_ctco_perm_1 --task_num 7 --first_task_id=0 --last_task_id=6 ;
 # spider_cxt_3_2.0_mix_ctco_perm_1
@@ -284,16 +284,16 @@ python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-l
 # combine1_perm_1
 python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_1_4.0_mix_ctco_perm_1 --task_num 7 --first_task_id=0 --last_task_id=6
 # combine1_perm_2
-python train/finetune_main.py --cuda_visible_devices 2 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_1_4.0_mix_ctco_perm_2 --task_num 7 --first_task_id=6 --last_task_id=6
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_1_4.0_mix_ctco_perm_2 --task_num 7 --first_task_id=0 --last_task_id=6
 # combine1_perm_3
-python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_1_4.0_mix_ctco_perm_3 --task_num 7 --first_task_id=2 --last_task_id=6
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type combine --dataset combine1_cxt_1_4.0_mix_ctco_perm_3 --task_num 7 --first_task_id=0 --last_task_id=6
 
 # spider_perm_1
-python train/finetune_main.py --cuda_visible_devices 3 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_1 --task_num 11 --first_task_id=0 --last_task_id=10
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_1 --task_num 11 --first_task_id=0 --last_task_id=10
 # spider_perm_2
-python train/finetune_main.py --cuda_visible_devices 3 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_2 --task_num 11 --first_task_id=1 --last_task_id=10
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_2 --task_num 11 --first_task_id=0 --last_task_id=10
 # spider_perm_3
-python train/finetune_main.py --cuda_visible_devices 3 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_3 --task_num 11 --first_task_id=1 --last_task_id=10
+python train/finetune_main.py --cuda_visible_devices 0 --backbone_plm t5-large-lm-adapt --per_device_train_batch_size 3 --per_device_eval_batch_size 3 --gradient_accumulation_steps 4 --dataset_type spider --dataset spider_cxt_1_4.0_mix_ctco_perm_3 --task_num 11 --first_task_id=0 --last_task_id=10
 ```
 
 + training student with teacher logits (student: t5-base, teacher: t5-large)
@@ -302,15 +302,15 @@ python train/finetune_main.py --cuda_visible_devices 3 --backbone_plm t5-large-l
 # combine1_perm_1
 python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
 # combine1_perm_2
-python train/main.py --cuda_visible_devices 3 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_2 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_2 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
 # combine1_perm_3
 python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_3 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false 
 # spider_perm_1
-python train/main.py --cuda_visible_devices 2 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
 # spider_perm_2
-python train/main.py --cuda_visible_devices 3 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_2 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_2 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
 # spider_perm_3
-python train/main.py --cuda_visible_devices 3 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_3 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_3 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm t5-large-lm-adapt --teacher_with_context True --task_adaptation_with_teacher_logits false
 ```
 
 + training student with teacher logits (student: t5-large, teacher: t5-large)
@@ -334,19 +334,19 @@ python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true 
 
 ```shell
 # spider_perm_1
-python train/main.py --cuda_visible_devices 1 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 2 --last_task_id 3 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
 
 # combine1_perm_1
-python train/main.py --cuda_visible_devices 3 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 1 --last_task_id 2 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-base-lm-adapt --predictor_batch_size 4 --predictor_gradient_accumulation_steps 3 --dataset_type combine --dataset combine1_perm_1 --first_task_id 0 --last_task_id 6 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
 ```
 
 + training student with teacher logits (student: t5-large, teacher: gpt)
 
 ```shell
 # spider_perm_1
-python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-large-lm-adapt --predictor_batch_size 1 --predictor_gradient_accumulation_steps 12 --dataset_type spider --dataset spider_perm_1 --first_task_id 4 --last_task_id 6 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-large-lm-adapt --predictor_batch_size 1 --predictor_gradient_accumulation_steps 12 --dataset_type spider --dataset spider_perm_1 --first_task_id 0 --last_task_id 10 --task_num 11 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
 
 # commbine1_perm_1
-python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-large-lm-adapt --predictor_batch_size 1 --predictor_gradient_accumulation_steps 12 --dataset_type combine --dataset combine1_perm_1 --first_task_id 1 --last_task_id 6 --task_num 7 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
+python train/main.py --cuda_visible_devices 0 --do_train true --do_cl_eval true --predictor_backbone_plm t5-large-lm-adapt --predictor_batch_size 1 --predictor_gradient_accumulation_steps 12 --dataset_type combine --dataset combine1_perm_1 --first_task_id 0 --last_task_id 6 --task_num 7 --teacher true --teacher_plm gpt --teacher_with_context true --task_adaptation_with_teacher_logits false
 ```
 
